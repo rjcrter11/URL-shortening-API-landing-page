@@ -1,17 +1,22 @@
 $Cyan: hsl(180, 66%, 49%);
 $DarkViolet: hsl(257, 27%, 26%);
-
+$GrayishViolet: hsl(257, 7%, 63%);
+$Gray: hsl(0, 0%, 75%);
 
 .link-wrapper {
-
+    width: 100%; 
+    margin: 0 auto; 
+    background-color: lighten($GrayishViolet, 30%); 
+    margin-top: 6%; 
     position: relative;
-
+    
+     
 .link-form-container {
     position: absolute; 
-    left: 8%; 
-    padding: 2.75% 3%; 
-    width: 77%; 
-    margin: 0 auto; 
+    top: -50px;
+    left: 8%;  
+    padding: 2.75% 3%;  
+    width: 78%;
     display: flex;
     justify-content: space-between;
     background-image: url('../../assets/bg-shorten-desktop.svg');
