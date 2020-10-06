@@ -28,12 +28,29 @@ const Cards = () => {
     ])
 
     return (
-        <div className='cards-container' >
-            <div className='cards-wrapper' >
-                <h2>Advanced Statistics</h2>
-                <p>Track how your links are performing across the web with <br />
+        <div className='cards' >
+            <div className='cards-container' >
+                <div className='cards-wrapper' >
+                    <h2>Advanced Statistics</h2>
+                    <p>Track how your links are performing across the web with <br />
                 our advanced statistics dashboard.
             </p>
+                </div>
+            </div>
+            <div className='cards-content' >
+                {cards.map((card) => {
+                    return (
+                        <div className='card' key={card.id} >
+                            <div className='card-icon' >
+                                <img src={card.icon} alt='icon' />
+                            </div>
+                            <p className='card-title' > {card.title} </p>
+                            <p className='card-text' > {card.text} </p>
+
+                        </div>
+                    )
+                })}
+                <div className='card-connector' ></div>
             </div>
         </div>
     )

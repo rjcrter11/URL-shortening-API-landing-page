@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './LinkForm.scss'
+import Cards from '../Cards/Cards';
 
 const LinkForm = () => {
     return (
@@ -9,10 +10,10 @@ const LinkForm = () => {
             <div className='link-form-container' >
                 <form>
                     <input placeholder='Shorten a link here...' />
-
                 </form>
                 <button>Shorten it!</button>
             </div>
+            <Cards />
         </div>
 
     )

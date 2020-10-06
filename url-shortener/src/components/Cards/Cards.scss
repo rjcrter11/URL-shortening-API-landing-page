@@ -1,23 +1,104 @@
 $Gray: hsl(0, 0%, 75%);
 $hoverBlack: rgb(43, 42, 42);
+$DarkViolet: hsl(257, 27%, 26%);
+$Cyan: hsl(180, 66%, 49%);
 
-.cards-container {
-    padding: 5% 0; 
-    display: flex; 
-    justify-content: center;
+.cards {
 
-    .cards-wrapper {
-    text-align: center;
 
-        h2 {
-            font-size: 1.9rem;
-            padding-bottom: 2%; 
-            color: $hoverBlack
-        }
-        p {
-            font-size: 0.9rem;
-            color: $Gray; 
+    .cards-container {
+        padding: 3% 0; 
+        display: flex; 
+        justify-content: center;
+        
+
+        .cards-wrapper {
+        text-align: center;
+        margin-top: 8%; 
+
+            h2 {
+                font-size: 1.9rem;
+                padding-bottom: 2%; 
+                color: $hoverBlack
+            }
+            p {
+                font-size: 0.9rem;
+                color: $Gray; 
+            }
         }
     }
-}
 
+    .cards-content {
+        display: flex;
+        justify-content: center;
+        padding-right: 7%; 
+        
+
+        .card-connector {
+            content: '';
+            z-index: 0;
+            position: absolute; 
+            background-color: $Cyan;
+            height: 5px;  
+            min-width: 500px; 
+            margin-top: 180px; 
+            
+        }
+       
+
+        .card {
+            z-index: 1; 
+            width: 23%; 
+            height: 220px; 
+            padding: 3% 2.5% 0 2.5%;  
+            border-radius: 5px; 
+            position: relative; 
+            margin: 4% 1% 4% 1%; 
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgb(250, 250, 250);
+
+            .card-title {
+                font-weight: 700;
+                color: $hoverBlack; 
+                font-size: 1rem;
+                margin-bottom: 3%;  
+            }
+
+            .card-text {
+                color: $Gray;  
+                font-weight: 500;
+                font-size: .75rem;
+                line-height: 1.3rem;
+                margin-bottom: 5%;
+            }
+
+            .card-icon {
+                
+                border-radius: 50%;
+                width: 60px; 
+                height: 60px; 
+                position: absolute; 
+                text-align: center;
+                top: -30px; 
+                padding-top: 4%; 
+                background-color: $DarkViolet;
+
+                img { 
+                    width: 30px; 
+                    height: 30px; 
+                }
+            }
+
+            &:nth-child(2) {
+                margin-top: 7%; 
+            }
+
+            &:nth-child(3) {
+                margin-top: 10%; 
+            }
+        }
+        
+    }
+}
