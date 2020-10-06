@@ -1,0 +1,48 @@
+$Cyan: hsl(180, 66%, 49%);
+$DarkViolet: hsl(257, 27%, 26%);
+
+
+.link-wrapper {
+
+    position: relative;
+
+.link-form-container {
+    position: absolute; 
+    left: 8%; 
+    padding: 2.75% 3%; 
+    width: 77%; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../../assets/bg-shorten-desktop.svg');
+    background-color: $DarkViolet;
+    border-radius: 6px; 
+
+    form {
+        width: 75%;  
+        
+        input {
+            width: 100%; 
+            padding: 1.5% 3%; 
+            border-radius: 6px;
+            border: 1px solid gray;
+            font-size: 1rem;
+        }
+    }
+
+    button {
+        width: 20%;
+        border-radius: 10px; 
+        
+        border: none;
+        background-color: $Cyan; 
+        color: white; 
+        font-weight: 700; 
+        font-size: 1.2rem;
+
+        &:hover {
+            background-color:lighten($Cyan, 20%);
+        }
+    }
+}
+}
