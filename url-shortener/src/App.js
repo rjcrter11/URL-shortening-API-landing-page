@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ActionCall from './components/ActionCall/ActionCall';
 import LinkForm from './components/LinkForm/LinkForm';
+import Cards from './components/Cards/Cards';
+
 
 function App() {
   return (
@@ -10,6 +12,7 @@ function App() {
       <Navbar />
       <ActionCall />
       <LinkForm />
+      <Cards />
     </div>
   );
 }

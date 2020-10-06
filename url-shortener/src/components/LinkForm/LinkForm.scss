@@ -3,15 +3,14 @@ $DarkViolet: hsl(257, 27%, 26%);
 
 
 .link-wrapper {
-
-    position: relative;
+    width: 84%; 
+    margin: 0 auto; 
+    display: flex; 
 
 .link-form-container {
-    position: absolute; 
-    left: 8%; 
+    
     padding: 2.75% 3%; 
-    width: 77%; 
-    margin: 0 auto; 
+    width: 93%;  
     display: flex;
     justify-content: space-between;
     background-image: url('../../assets/bg-shorten-desktop.svg');

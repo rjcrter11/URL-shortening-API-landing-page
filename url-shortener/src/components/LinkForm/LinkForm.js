@@ -4,6 +4,7 @@ import './LinkForm.scss'
 
 const LinkForm = () => {
     return (
+
         <div className='link-wrapper' >
             <div className='link-form-container' >
                 <form>
@@ -13,6 +14,7 @@ const LinkForm = () => {
                 <button>Shorten it!</button>
             </div>
         </div>
+
     )
 }
 

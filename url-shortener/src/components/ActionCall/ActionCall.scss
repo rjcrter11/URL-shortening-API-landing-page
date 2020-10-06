@@ -1,5 +1,6 @@
 $Gray: hsl(0, 0%, 75%);
 $Cyan: hsl(180, 66%, 49%);
+$hoverBlack: rgb(43, 42, 42);
 
 .action-call-container {
     padding: 3% 0 3% 8%; 
@@ -14,6 +15,7 @@ $Cyan: hsl(180, 66%, 49%);
         h1 {
             font-size: 4.2rem;
             line-height: 5rem;
+            color: $hoverBlack; 
         }
 
         p {

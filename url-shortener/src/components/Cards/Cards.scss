@@ -1,0 +1,23 @@
+$Gray: hsl(0, 0%, 75%);
+$hoverBlack: rgb(43, 42, 42);
+
+.cards-container {
+    padding: 5% 0; 
+    display: flex; 
+    justify-content: center;
+
+    .cards-wrapper {
+    text-align: center;
+
+        h2 {
+            font-size: 1.9rem;
+            padding-bottom: 2%; 
+            color: $hoverBlack
+        }
+        p {
+            font-size: 0.9rem;
+            color: $Gray; 
+        }
+    }
+}
+
