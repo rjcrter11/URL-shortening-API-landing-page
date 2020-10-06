@@ -1,0 +1,27 @@
+$DarkViolet: hsl(257, 27%, 26%);
+$Cyan: hsl(180, 66%, 49%);
+
+.boost-links-container { 
+    padding: 3.5% 0; 
+    background-image: url('../../assets/bg-boost-desktop.svg');
+    background-color: $DarkViolet;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        color: white; 
+        font-size: 1.5rem;
+        margin-bottom: 1%;
+    }
+
+    button {
+        width: 9%;
+        padding: 0.7% 0;  
+        border-radius: 18px;
+        border: none; 
+        color: white; 
+        background-color: $Cyan;
+        font-weight: 700; 
+    }
+}
