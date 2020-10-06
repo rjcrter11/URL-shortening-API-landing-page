@@ -2,7 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/rjcrter11/URL-shortening-API-landing-page?style=plastic)
 ![GitHub deployments](https://img.shields.io/github/deployments/rjcrter11/URL-shortening-API-landing-page/production?label=vercel&logo=vercel&style=plastic)
-![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/rjcrter11/URL-shortening-API-landing-page?style=plastic)
+![Github last commit](https://img.shields.io/github/last-commit/rjcrter11/URL-shortening-API-landing-page)
 
 ## Welcome! 👋
 
