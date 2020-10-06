@@ -6,8 +6,10 @@
 }
 
 .App {
+  margin: 0 auto; 
   font-family: 'Poppins', sans-serif;
   font-size: 62.5%;
+  max-width: 1440px;
 }
 
 /* .App {
