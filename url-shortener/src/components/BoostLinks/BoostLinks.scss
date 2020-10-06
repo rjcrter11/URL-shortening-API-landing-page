@@ -26,6 +26,10 @@ $Cyan: hsl(180, 66%, 49%);
         font-weight: 700; 
         cursor: pointer;
 
+        &:focus {
+            outline: 0;
+        }
+
         &:hover {
             background-color:lighten($Cyan, 20%);
         }
