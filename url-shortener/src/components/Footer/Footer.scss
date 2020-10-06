@@ -64,13 +64,16 @@ $Cyan: hsl(180, 66%, 49%);
         justify-content: flex-start; 
         padding-top: 1%; 
 
+
         .icon {
             width: 25px; 
             height: 25px; 
             margin: 0 3%; 
             cursor: pointer;
+             
+            color: white; 
 
-            &:active {
+            &:hover {
                 color: $Cyan !important;
             }
         }

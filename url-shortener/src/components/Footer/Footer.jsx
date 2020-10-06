@@ -1,9 +1,14 @@
 import React from 'react';
 
-import { ReactComponent as Facebook } from '../../assets/icon-facebook.svg'
-import { ReactComponent as Twitter } from '../../assets/icon-twitter.svg'
-import { ReactComponent as Instagram } from '../../assets/icon-instagram.svg'
-import { ReactComponent as Pinterest } from '../../assets/icon-pinterest.svg'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+    faFacebookSquare,
+    faTwitter,
+    faPinterest,
+    faInstagram,
+} from '@fortawesome/free-brands-svg-icons'
+
 
 import './Footer.scss'
 
@@ -35,10 +40,10 @@ const Footer = () => (
             </div>
         </div>
         <div className='social-media-container' >
-            <Facebook className='icon' />
-            <Twitter className='icon' />
-            <Pinterest className='icon' />
-            <Instagram className='icon' />
+            <FontAwesomeIcon icon={faFacebookSquare} className='icon' />
+            <FontAwesomeIcon icon={faTwitter} className='icon' />
+            <FontAwesomeIcon icon={faPinterest} className='icon' />
+            <FontAwesomeIcon icon={faInstagram} className='icon' />
         </div>
     </div>
 )

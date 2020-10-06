@@ -2,6 +2,8 @@ $Cyan: hsl(180, 66%, 49%);
 $DarkViolet: hsl(257, 27%, 26%);
 $GrayishViolet: hsl(257, 7%, 63%);
 $Gray: hsl(0, 0%, 75%);
+$hoverBlack: rgb(43, 42, 42);
+$Red: hsl(0, 87%, 67%);
 
 .link-wrapper {
     width: 100%; 
@@ -16,23 +18,44 @@ $Gray: hsl(0, 0%, 75%);
     position: absolute; 
     top: -50px;
     left: 8%;  
-    padding: 2.75% 3%;  
+    padding: 2.5% 3% 1.5% 3%;  
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-image: url('../../assets/bg-shorten-desktop.svg');
     background-color: $DarkViolet;
     border-radius: 6px; 
 
-    form {
+    .link-input {
         width: 75%;  
+
+        &:focus {
+            outline: 0;
+        }
         
         input {
             width: 100%; 
             padding: 1.5% 3%; 
             border-radius: 6px;
-            border: 1px solid gray;
-            font-size: 1rem;
+            border: none; 
+            font-size: .9rem;
+            font-weight: 600;
+            color: rgba(128, 128, 128, 0.493); 
+            margin-bottom: 9px; 
+
+            &:focus {
+                outline: 0; 
+            }
+
+            
+        }
+        .url-error {
+            border: 2px solid $Red; 
+            &::placeholder {
+                color: $Red !important; 
+                opacity: 1;
+            }
         }
     }
 
@@ -45,10 +68,85 @@ $Gray: hsl(0, 0%, 75%);
         color: white; 
         font-weight: 700; 
         font-size: 1.2rem;
+        cursor: pointer;
+
+        &:focus {
+            outline: 0; 
+        }
 
         &:hover {
             background-color:lighten($Cyan, 20%);
         }
     }
+
+    span {
+        width: 100%; 
+        color: $Red; 
+    }
 }
+
+    .urls-container {
+        transition: .5s ease;
+        padding-top: 80px; 
+        width: 78%; 
+        margin-left: auto; 
+        margin-right: 13%; 
+
+        .url-dropdown {
+            padding: 10px; 
+            display: flex;
+            margin-bottom: 10px; 
+            align-items: center;
+            justify-content: space-between;
+            text-align: left;
+            height: 60px; 
+            background-color: white; 
+            border-radius: 6px;
+
+            span {
+                color: $hoverBlack; 
+                font-size: .75rem;
+            }
+
+            .link-and-button {
+                width: 22%;
+                display: flex; 
+                justify-content: space-between; 
+                align-items: center;
+
+                button {
+                    width: 37%;
+                    padding: 3% 0; 
+                    border-radius: 5px;
+                    border: none;  
+                    color: white;
+                    background-color: $Cyan;
+                    font-weight: 700; 
+                    cursor: pointer;
+
+                    &:focus {
+                        outline: 0; 
+                    }
+
+                    &:hover {
+                        background-color: lighten($Cyan, 20%);
+                    }
+                    
+                    
+                }
+                .copied {
+                    background-color: $DarkViolet;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $Cyan; 
+                    font-size: .7rem;
+                    font-weight: 700; 
+                }
+            }
+
+        
+        }
+    }
 }

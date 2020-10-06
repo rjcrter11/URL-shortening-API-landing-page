@@ -34,6 +34,15 @@ $hoverBlack: rgb(43, 42, 42);
             color: white; 
             font-weight: 700;
             font-size: 1.2rem;
+            cursor: pointer;
+
+            &:focus {
+                outline: 0;
+            }
+
+            &:hover {
+                background-color: lighten($Cyan, 20%);
+            }
         }
     }
 
