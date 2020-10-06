@@ -10,7 +10,7 @@ $hoverBlack: rgb(43, 42, 42);
 
     .action-call {
         width: 60%; 
-        padding-top: 4%; 
+        padding-top: 4%;
 
         h1 {
             font-size: 4.2rem;
@@ -38,12 +38,13 @@ $hoverBlack: rgb(43, 42, 42);
     }
 
     .action-img {
-        margin-left: 5%;  
+        margin-left: 3%;  
         overflow: hidden;
         
 
         img {
-            max-height: 40vh; 
+            max-height: 50vh; 
+            width: 750px; 
         }
     }
 }

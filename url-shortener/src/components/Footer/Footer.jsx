@@ -1,9 +1,9 @@
 import React from 'react';
 
-import facebook from '../../assets/icon-facebook.svg'
-import twitter from '../../assets/icon-twitter.svg'
-import instagram from '../../assets/icon-instagram.svg'
-import pinterest from '../../assets/icon-pinterest.svg'
+import { ReactComponent as Facebook } from '../../assets/icon-facebook.svg'
+import { ReactComponent as Twitter } from '../../assets/icon-twitter.svg'
+import { ReactComponent as Instagram } from '../../assets/icon-instagram.svg'
+import { ReactComponent as Pinterest } from '../../assets/icon-pinterest.svg'
 
 import './Footer.scss'
 
@@ -16,29 +16,29 @@ const Footer = () => (
         <div className="features-container" >
             <div className='features'>
                 <h3>Features</h3>
-                <p>Link Shortening</p>
-                <p>Branded Links</p>
-                <p>Analytics</p>
+                <a href='/' >Link Shortening</a>
+                <a href='/'>Branded Links</a>
+                <a href='/'>Analytics</a>
             </div>
             <div className='resources'>
                 <h3>Resources</h3>
-                <p>Blog</p>
-                <p>Developers</p>
-                <p>Support</p>
+                <a href='/'>Blog</a>
+                <a href='/'>Developers</a>
+                <a href='/'>Suaport</a>
             </div>
             <div className='company'>
                 <h3>Company</h3>
-                <p>About</p>
-                <p>Our Team</p>
-                <p>Careers</p>
-                <p>Contact</p>
+                <a href='/'>About</a>
+                <a href='/'>Our Team</a>
+                <a href='/'>Careers</a>
+                <a href='/'>Contact</a>
             </div>
         </div>
         <div className='social-media-container' >
-            <img src={facebook} alt='facebook logo' />
-            <img src={twitter} alt='twitter logo' />
-            <img src={pinterest} alt='pinterest logo' />
-            <img src={instagram} alt='instagram logo' />
+            <Facebook className='icon' />
+            <Twitter className='icon' />
+            <Pinterest className='icon' />
+            <Instagram className='icon' />
         </div>
     </div>
 )

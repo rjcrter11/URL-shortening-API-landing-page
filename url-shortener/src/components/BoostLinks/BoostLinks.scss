@@ -2,7 +2,8 @@ $DarkViolet: hsl(257, 27%, 26%);
 $Cyan: hsl(180, 66%, 49%);
 
 .boost-links-container { 
-    padding: 3.5% 0; 
+    padding: 4.5% 0 2% 0; 
+    height: 25vh; 
     background-image: url('../../assets/bg-boost-desktop.svg');
     background-color: $DarkViolet;
     display: flex; 
@@ -23,5 +24,10 @@ $Cyan: hsl(180, 66%, 49%);
         color: white; 
         background-color: $Cyan;
         font-weight: 700; 
+        cursor: pointer;
+
+        &:hover {
+            background-color:lighten($Cyan, 20%);
+        }
     }
 }
