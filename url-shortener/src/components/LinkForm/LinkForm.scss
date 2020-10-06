@@ -3,6 +3,7 @@ $DarkViolet: hsl(257, 27%, 26%);
 $GrayishViolet: hsl(257, 7%, 63%);
 $Gray: hsl(0, 0%, 75%);
 $hoverBlack: rgb(43, 42, 42);
+$Red: hsl(0, 87%, 67%);
 
 .link-wrapper {
     width: 100%; 
@@ -17,9 +18,10 @@ $hoverBlack: rgb(43, 42, 42);
     position: absolute; 
     top: -50px;
     left: 8%;  
-    padding: 2.75% 3%;  
+    padding: 2.5% 3% 1.5% 3%;  
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-image: url('../../assets/bg-shorten-desktop.svg');
     background-color: $DarkViolet;
@@ -36,8 +38,11 @@ $hoverBlack: rgb(43, 42, 42);
             width: 100%; 
             padding: 1.5% 3%; 
             border-radius: 6px;
-            border: 1px solid gray;
-            font-size: 1rem;
+            border: none; 
+            font-size: .9rem;
+            font-weight: 600;
+            color: rgba(128, 128, 128, 0.493); 
+            margin-bottom: 9px; 
 
             &:focus {
                 outline: 0; 
@@ -46,9 +51,9 @@ $hoverBlack: rgb(43, 42, 42);
             
         }
         .url-error {
-            border: 1px solid red; 
+            border: 2px solid $Red; 
             &::placeholder {
-                color: red !important; 
+                color: $Red !important; 
                 opacity: 1;
             }
         }
@@ -69,6 +74,11 @@ $hoverBlack: rgb(43, 42, 42);
             background-color:lighten($Cyan, 20%);
         }
     }
+
+    span {
+        width: 100%; 
+        color: $Red; 
+    }
 }
 
     .urls-container {
@@ -81,6 +91,7 @@ $hoverBlack: rgb(43, 42, 42);
         .url-dropdown {
             padding: 10px; 
             display: flex;
+            margin-bottom: 10px; 
             align-items: center;
             justify-content: space-between;
             text-align: left;
@@ -130,6 +141,8 @@ $hoverBlack: rgb(43, 42, 42);
                     font-weight: 700; 
                 }
             }
+
+        
         }
     }
 }

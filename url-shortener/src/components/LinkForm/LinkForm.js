@@ -47,7 +47,7 @@ const LinkForm = () => {
                     localStorage.setItem('link', JSON.stringify(tempArr));
                     setUrl('')
                 })
-                .catch(err => console.log(err), setError(true))
+                .catch(err => console.log(err))
         }
     }
 
@@ -78,13 +78,15 @@ const LinkForm = () => {
                         return (
                             <div className='url-dropdown' key={idx} >
                                 <span> {url.url} </span>
-                                <div className='url-divider' ></div>
+
                                 <div className="link-and-button" >
                                     <a className='short-url' href={url.shorten} > {url.shorten} </a>
                                     <CopyToClipboard text={url.shorten} >
                                         <button className={url.copied ? 'copied' : ''} onClick={() => handleCopy(idx)}> {url.copied ? 'Copied!' : 'Copy'} </button>
                                     </CopyToClipboard>
+
                                 </div>
+
                             </div>
                         )
                     })
