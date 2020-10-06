@@ -1,0 +1,47 @@
+$Gray: hsl(0, 0%, 75%);
+$Cyan: hsl(180, 66%, 49%);
+
+.action-call-container {
+    padding: 3% 0 3% 8%; 
+    overflow: hidden;
+    display: flex; 
+    justify-content: space-between;
+
+    .action-call {
+        width: 60%; 
+        padding-top: 4%; 
+
+        h1 {
+            font-size: 4.2rem;
+            line-height: 5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: $Gray; 
+            margin-bottom: 2%; 
+        }
+
+        button {
+            margin-top: 2%; 
+            width: 25%; 
+            padding: 1.5% 2.25%; 
+            border-radius: 20px;
+            border: none; 
+            background-color: $Cyan;
+            color: white; 
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    }
+
+    .action-img {
+        margin-left: 5%;  
+        overflow: hidden;
+        
+
+        img {
+            max-height: 40vh; 
+        }
+    }
+}
