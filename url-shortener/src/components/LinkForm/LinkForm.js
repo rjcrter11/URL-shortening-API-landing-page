@@ -68,15 +68,15 @@ const LinkForm = () => {
                 </div>
                 <button onClick={handleClick} >Shorten it!</button>
                 {
-                    error ? (
-                        <span className='error' >Please add a link</span>
-                    ) : null
+                    error ?
+                        (<span className='error' >Please add a link</span>)
+                        : null
                 }
             </div>
             <div className='urls-container' >
                 {
                     savedUrls.map((url, idx) => (
-                        <Dropdown url={{ ...url }} idx={idx} handleCopy={handleCopy} />
+                        <Dropdown key={idx} url={{ ...url }} idx={idx} handleCopy={handleCopy} />
                     ))
                 }
             </div>

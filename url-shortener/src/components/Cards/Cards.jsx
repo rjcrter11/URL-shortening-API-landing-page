@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { cards } from '../../data/cardData'
 import './Cards.scss'
@@ -17,7 +17,7 @@ const Cards = () => (
         </div>
         <div className='cards-content' >
             {cards.map((card) => (
-                <Card card={{ ...card }} />
+                <Card key={card.id} card={{ ...card }} />
             ))}
             <div className='card-connector' ></div>
         </div>
