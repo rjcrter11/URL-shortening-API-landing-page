@@ -110,7 +110,9 @@ $Cyan: hsl(180, 66%, 49%);
             .card {
                 width: 60%; 
                 align-items: center;
+                justify-content: space-evenly;
                 padding: 3% 4% 0 4%; 
+                height: 300px; 
 
                 .card-title {
                     font-size: 1.2rem;
@@ -126,6 +128,7 @@ $Cyan: hsl(180, 66%, 49%);
                 .card-icon {
                     height: 70px; 
                     width: 70px; 
+                    padding-top: 5%; 
                 }
 
                 &:nth-child(2) {
@@ -147,6 +150,8 @@ $Cyan: hsl(180, 66%, 49%);
         }
         
     }
+
+
 }
 
 

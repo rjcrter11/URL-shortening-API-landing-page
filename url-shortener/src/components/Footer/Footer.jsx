@@ -29,7 +29,7 @@ const Footer = () => (
                 <h3>Resources</h3>
                 <a href='/'>Blog</a>
                 <a href='/'>Developers</a>
-                <a href='/'>Suaport</a>
+                <a href='/'>Support</a>
             </div>
             <div className='company'>
                 <h3>Company</h3>
