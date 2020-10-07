@@ -1,4 +1,4 @@
-# URL-shortening-API-landing-page
+# Shortly
 ![GitHub](https://img.shields.io/github/license/rjcrter11/E-commerce-app?style=plastic)
 ![GitHub deployments](https://img.shields.io/github/deployments/rjcrter11/URL-shortening-API-landing-page/production?label=vercel&logo=vercel&style=plastic)
 ![Github last commit](https://img.shields.io/github/last-commit/rjcrter11/URL-shortening-API-landing-page)
