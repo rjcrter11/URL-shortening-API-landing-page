@@ -32,6 +32,13 @@ $hoverBlack: rgb(43, 42, 42);
                 }
             }
         }
+
+        @media(max-width:700px) {
+
+            .features {
+                display: none; 
+            }
+        }
     }
     
     .login-container {
@@ -65,5 +72,88 @@ $hoverBlack: rgb(43, 42, 42);
             }
         }
     }
+
+    .toggled-login-container {
+        display: none; 
+
+        
+    }
+    .toggle-button {
+        display: none; 
+    }
+
+
+    @media(max-width: 999px) {
+    
+        .logo-container {
+            width: 60%; 
+        }    
+
+        .login-container {
+            width: 35%; 
+        }
+      
+  }
+
+  @media(max-width: 700px) {
+
+    .logo-container {
+        align-items: flex-start;
+    }
+
+    .login-container {
+        display: none; 
+    }
+
+    .toggle-container {
+        width: 25%; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
+
+
+        .toggled-items-container {
+        display: flex; 
+        flex-direction: column;
+        width: 100%; 
+        align-items: center;
+        border: 1px solid rgba(128, 128, 128, 0.651); 
+
+        a {
+            font-size: 1rem;
+            text-decoration: none;
+            color: $Gray; 
+            padding: 1% 0; 
+            border-bottom: 1px solid  rgba(128, 128, 128, 0.651);
+            text-align: center;
+            width: 100%; 
+
+            &:last-child {
+                border-bottom: none; 
+                text-align: center;
+                width: 100%; 
+            }
+        }
+       
+    }
+        .toggle-button {
+                color: $Gray; 
+                display: flex;
+                vertical-align: middle;
+                width: 40px; 
+                height: 35px;
+                margin-bottom: 2%;  
+
+            }
+    }
+
+    
+
+    
+
+  }
 }
+
+
 

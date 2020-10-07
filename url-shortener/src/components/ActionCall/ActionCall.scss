@@ -13,21 +13,22 @@ $hoverBlack: rgb(43, 42, 42);
         padding-top: 4%;
 
         h1 {
-            font-size: 4.2rem;
-            line-height: 5rem;
+            font-size: 4.5rem;
+            line-height: 5.5rem;
             color: $hoverBlack; 
         }
 
         p {
             font-size: 1.2rem;
             color: $Gray; 
-            margin-bottom: 2%; 
+            margin-bottom: 2%;
+            width: 70%;  
         }
 
         button {
             margin-top: 2%; 
-            width: 25%; 
-            padding: 1.5% 2.25%; 
+            width: 29%; 
+            padding: 2% 2.25%; 
             border-radius: 20px;
             border: none; 
             background-color: $Cyan;
@@ -56,4 +57,64 @@ $hoverBlack: rgb(43, 42, 42);
             width: 750px; 
         }
     }
+
+    @media(max-width: 700px) {
+        .action-call {
+            padding: 12% 0; 
+            align-items: center;
+
+            button {
+                width: 40%; 
+                padding: 3%; 
+                border-radius: 25px;
+            }
+
+            p {
+                font-size: 1.2rem;
+                text-align: center;
+                
+            }
+    
+        }
+    }
+
+    @media(max-width: 550px) {
+        .action-call {
+            padding: 12% 3%; 
+
+            h1 {
+                font-size: 3.5rem;
+                line-height: 4.2rem;
+            }
+
+            p {
+                width: 100%;
+                padding: 2% 0; 
+            }
+        }
+    }
+
+}
+
+
+@media(max-width: 999px) {
+    .action-call-container {
+        flex-direction: column-reverse;
+        padding: 3% 0 3% 0; 
+
+        .action-call {
+            width: 100%; 
+            text-align: center;
+
+            p {
+                margin: 0 auto; 
+            }
+        }
+        .action-img {
+            width: 100%;
+            margin-left: 5%;  
+        }
+    }
+
+
 }

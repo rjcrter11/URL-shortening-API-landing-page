@@ -3,6 +3,7 @@
 ![GitHub deployments](https://img.shields.io/github/deployments/rjcrter11/URL-shortening-API-landing-page/production?label=vercel&logo=vercel&style=plastic)
 ![Github last commit](https://img.shields.io/github/last-commit/rjcrter11/URL-shortening-API-landing-page)
 
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.

@@ -80,3 +80,54 @@ $Cyan: hsl(180, 66%, 49%);
     }
     
 }
+
+@media(max-width: 870px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        height: 60vh; 
+
+        .logo-container {
+            width: 30%; 
+            text-align: center;
+
+            h2 {
+                font-size: 2.75rem;
+            }
+        }
+
+
+        .features-container {
+            flex-direction: column;
+            align-items: center;
+            width: 100%; 
+
+            .features, .resources, .company {
+                width: 20%; 
+                align-items: center;
+                margin: 2%; 
+
+                h3 {
+                    margin-bottom: 1%; 
+                    padding-bottom: 1%;
+                    font-size: 1rem;
+                }
+
+                a {
+                    margin: 1%; 
+                    text-align: center;
+                }
+            }
+        }
+
+        .social-media-container {
+            width: 30%; 
+            justify-content: center;
+
+            .icon {
+                height: 35px; 
+                width: 35px; 
+            }
+        }
+    }
+}

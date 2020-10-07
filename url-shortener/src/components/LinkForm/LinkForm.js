@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 
 import axios from 'axios';
-import { CopyToClipboard } from 'react-copy-to-clipboard'
+
+import Cards from '../Cards/Cards';
+import Dropdown from '../Dropdown/Dropdown';
 
 import './LinkForm.scss'
-import Cards from '../Cards/Cards';
 
 const LinkForm = () => {
 
@@ -67,29 +68,16 @@ const LinkForm = () => {
                 </div>
                 <button onClick={handleClick} >Shorten it!</button>
                 {
-                    error ? (
-                        <span className='error' >Please add a link</span>
-                    ) : null
+                    error ?
+                        (<span className='error' >Please add a link</span>)
+                        : null
                 }
             </div>
             <div className='urls-container' >
                 {
-                    savedUrls.map((url, idx) => {
-                        return (
-                            <div className='url-dropdown' key={idx} >
-                                <span> {url.url} </span>
-
-                                <div className="link-and-button" >
-                                    <a className='short-url' href={url.shorten} > {url.shorten} </a>
-                                    <CopyToClipboard text={url.shorten} >
-                                        <button className={url.copied ? 'copied' : ''} onClick={() => handleCopy(idx)}> {url.copied ? 'Copied!' : 'Copy'} </button>
-                                    </CopyToClipboard>
-
-                                </div>
-
-                            </div>
-                        )
-                    })
+                    savedUrls.map((url, idx) => (
+                        <Dropdown key={idx} url={{ ...url }} idx={idx} handleCopy={handleCopy} />
+                    ))
                 }
             </div>
             <Cards />

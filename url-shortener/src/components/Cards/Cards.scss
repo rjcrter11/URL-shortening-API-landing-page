@@ -5,7 +5,6 @@ $Cyan: hsl(180, 66%, 49%);
 
 .cards {
 
-
     .cards-container {
         padding: 0 0 3% 0; 
         display: flex; 
@@ -99,6 +98,60 @@ $Cyan: hsl(180, 66%, 49%);
                 margin-top: 10%; 
             }
         }
+
+        
         
     }
+    @media(max-width: 870px) {
+        .cards-content {
+            flex-direction: column;
+            align-items: center;
+    
+            .card {
+                width: 60%; 
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 3% 4% 0 4%; 
+                height: 300px; 
+
+                .card-title {
+                    font-size: 1.2rem;
+                    margin-top: 5%;  
+                }
+
+                .card-text {
+                    font-size: 1rem; 
+                    text-align: center;
+                    line-height: 1.5rem;
+                }
+
+                .card-icon {
+                    height: 70px; 
+                    width: 70px; 
+                    padding-top: 5%; 
+                }
+
+                &:nth-child(2) {
+                    margin-top: 6%; 
+                }
+    
+                &:nth-child(3) {
+                    margin-top: 6%; 
+                }
+                
+            }
+
+            .card-connector {
+                display: flex; 
+                align-self: center;
+                transform: rotate(90deg);
+                width: 600px; 
+            }
+        }
+        
+    }
+
+
 }
+
+
