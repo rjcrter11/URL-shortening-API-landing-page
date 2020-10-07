@@ -34,4 +34,24 @@ $Cyan: hsl(180, 66%, 49%);
             background-color:lighten($Cyan, 20%);
         }
     }
+
+    @media(max-width: 870px) {
+
+        h2 {
+            font-size: 3rem;
+        }
+
+        button {
+            width: 40%; 
+            padding: 2.5% 0;
+            border-radius: 25px; 
+        }
+    
+    }
+}
+
+@media(max-width: 870px) {
+    .boost-links-container {
+        height: 22vh; 
+    }
 }

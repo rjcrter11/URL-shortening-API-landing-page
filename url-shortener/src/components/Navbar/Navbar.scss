@@ -65,5 +65,19 @@ $hoverBlack: rgb(43, 42, 42);
             }
         }
     }
+
+    @media(max-width: 999px) {
+    
+        .logo-container {
+            width: 60%; 
+        }    
+
+        .login-container {
+            width: 35%; 
+        }
+      
+  }
 }
+
+
 

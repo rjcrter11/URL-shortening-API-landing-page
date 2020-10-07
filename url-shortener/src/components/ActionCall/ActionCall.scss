@@ -56,4 +56,22 @@ $hoverBlack: rgb(43, 42, 42);
             width: 750px; 
         }
     }
+
+}
+
+
+@media(max-width: 999px) {
+    .action-call-container {
+        flex-direction: column-reverse;
+        padding: 3% 0 3% 0; 
+
+        .action-call {
+            width: 100%; 
+            text-align: center;
+        }
+        .action-img {
+            width: 100%;
+            margin-left: 5%;  
+        }
+    }
 }

@@ -21,7 +21,6 @@ $Red: hsl(0, 87%, 67%);
     padding: 2.5% 3% 1.5% 3%;  
     width: 80%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     background-image: url('../../assets/bg-shorten-desktop.svg');
     background-color: $DarkViolet;
@@ -103,13 +102,17 @@ $Red: hsl(0, 87%, 67%);
             background-color: white; 
             border-radius: 6px;
 
-            span {
+            p {
                 color: $hoverBlack; 
                 font-size: .75rem;
+                width: 400px; 
+                overflow: hidden;
             }
 
+           
+
             .link-and-button {
-                width: 22%;
+                width: 30%;
                 display: flex; 
                 justify-content: space-between; 
                 align-items: center;
@@ -149,4 +152,76 @@ $Red: hsl(0, 87%, 67%);
         
         }
     }
+
+    @media(max-width: 870px) {
+        .link-form-container {
+            flex-direction: column;
+            align-items: center;
+
+            .link-input {
+                width: 100%; 
+
+                input {
+                    padding: 2%; 
+                }
+            }
+
+            button {
+                width: 100%; 
+                padding: 2% 0; 
+                border-radius: 3px;
+            }
+        }
+
+        .urls-container {
+            padding-top: 115px; 
+
+            
+
+            .url-dropdown {
+                flex-direction: column;
+                height: 150px; 
+                
+                align-items: flex-start;
+
+                .full-url {
+                    width: 50%; 
+                     
+                    p {
+                         
+                        width: 100%; 
+                        font-size: 1rem;
+                        
+                    }
+                }
+
+                .divider {
+                    width: 100%; 
+                    border-top: 1px solid $Gray !important;   
+                  
+                } 
+                
+
+                .link-and-button {
+                   
+                    flex-direction: column;
+                    width: 100%; 
+
+                    a {
+                        width: 100%; 
+                        font-size: 1rem;
+                    }
+                    button {
+                        width: 100%; 
+                        margin-top: 1%; 
+                    }
+                }
+            }
+        }
+        
+
+    }
+
+    
 }
+

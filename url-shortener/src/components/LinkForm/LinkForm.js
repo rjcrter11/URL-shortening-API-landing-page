@@ -77,8 +77,10 @@ const LinkForm = () => {
                     savedUrls.map((url, idx) => {
                         return (
                             <div className='url-dropdown' key={idx} >
-                                <span> {url.url} </span>
-
+                                <div className='full-url' >
+                                    <p> {url.url} </p>
+                                </div>
+                                <div className='divider' ></div>
                                 <div className="link-and-button" >
                                     <a className='short-url' href={url.shorten} > {url.shorten} </a>
                                     <CopyToClipboard text={url.shorten} >
