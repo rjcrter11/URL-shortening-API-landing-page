@@ -130,4 +130,31 @@ $Cyan: hsl(180, 66%, 49%);
             }
         }
     }
+
+    @media(max-width: 450px) {
+        .footer-container {
+            height: 80vh; 
+            justify-content: space-around;
+            padding:L 1% 0; 
+
+            .logo-container {
+                width: 100%; 
+                text-align: center;
+                h2 {
+                    width: 100%; 
+                    text-align: center;
+                }
+            }
+
+            .features-container {
+                padding-top: 0; 
+                
+            h3 {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+        }
+    }
 }
